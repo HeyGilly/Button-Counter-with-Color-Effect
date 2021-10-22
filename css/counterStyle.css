@@ -1,0 +1,76 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;800;900&display=swap');
+
+:root {
+    /*     primary/main color  */
+    --Dodgers-blue: #005A9C;
+    --slateGray: #617D98;
+    --raisinBlack: #222;
+    --red: #EF3E42;
+    --silver: #A5ACAF;
+    --white: #fff;
+    /*     primary fonts   */
+    --primaryFont: 'Montserrat', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--primaryFont);
+    color: var(--white);
+    background: var(--Dodgers-blue);
+    cursor: not-allowed;
+}
+
+h1{
+    font-size: 9rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+/*This is going to center the main content of this page*/
+/*There are many ways to center an item. this is one*/
+main {
+    place-items: center;
+    display: grid;
+    min-height: 100vh;
+}
+
+/*This is going to center the zero*/
+.container {
+    text-align: center;
+}
+
+/*Controls the size of that 0*/
+#displayCounter {
+    font-size: 12rem;
+    font-weight: 800;
+
+}
+
+.btn {
+    background: var(--silver);
+    color: var(--white);
+    border: 3px solid var(--raisinBlack);
+    border-radius: 0.75rem;
+    padding: .775rem 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 1px 9px #1A6AA2;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    margin: 1.5rem;
+    font-size: 2.5rem;
+    transition-timing-function: ease-in-out;
+    transition-duration: .555s;
+}
+
+.btn:hover {
+    color: var(--white);
+    background: transparent;
+    box-shadow: 0 1px 9px #F1F5F8;
+
+}
+
